@@ -13,13 +13,13 @@ _G.LogsDes = {
 }
 _G.WebHook = {
     ["Enabled"] = true, -- เปิดการใช้งาน
-    ["Url"] = "https://discord.com/api/webhooks/1217343175920844883/8O9WTowetvv5W9xxuMTuewMS41cH8HX865Lm2xRg7MKhE3DUziNv9_BY-wUIystz9ghF", -- ลิ้งค์เว็บฮุก
+    ["Url"] = "", -- ลิ้งค์เว็บฮุก
     ["Delay"] = 60 -- วินาที
 }
 _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
         ['FPSBOOST'] = true, -- ภาพกาก
-        ["FPSLOCKAMOUNT"] = 20, -- จำนวน FPS
+        ["FPSLOCKAMOUNT"] = 60, -- จำนวน FPS
         ['WhiteScreen'] = true, -- จอขาว
         ['CloseUI'] = true, -- ปิด Ui
         ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
@@ -28,15 +28,11 @@ _G.MainSettings = {
         ["LockFruitsRaid"] = { -- ล็อคผลที่ไม่เอาไปลงดัน
             [1] = "Dough-Dough",
             [2] = "Dragon-Dragon"
-            [3] = "Kitsune-Kitsune"
-            [4] = "Leopard-Leopard"
-            [5] = "Mammoth-Mammoth"
-
         }
     }
 _G.Fruits_Settings = { -- ตั้งค่าผล
-    ['Main_Fruits'] = {''}, -- ผลหลัก ถ้ายังไม่ใช่ค่าที่ตั้งมันจะกินจนกว่าจะใช่หรือซื้อ
-    ['Select_Fruits'] = {"Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Magma-Magma"} -- กินหรือซื้อตอนไม่มีผล
+    ['Main_Fruits'] = {'Dough-Dough'}, -- ผลหลัก ถ้ายังไม่ใช่ค่าที่ตั้งมันจะกินจนกว่าจะใช่หรือซื้อ
+    ['Select_Fruits'] = {"Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Rumble-Rumble", "Magma-Magma", "Buddha-Buddha"} -- กินหรือซื้อตอนไม่มีผล
 }
 _G.Quests_Settings = { -- ตั้งค่าเควสหลักๆ
     ['Rainbow_Haki'] = true,
@@ -73,7 +69,7 @@ _G.Settings_Melee = { -- หมัดที่จะทำ
 _G.FarmMastery_Settings = {
     ['Melee'] = true,
     ['Sword'] = true,
-    ['DevilFruits'] = false,
+    ['DevilFruits'] = true,
     ['Select_Swords'] = {
         ["AutoSettings"] = true, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง
         ["ManualSettings"] = { -- ถ้าปรับ AutoSettings เป็น false มันจะฟาร์มดาบที่เลือกตรงนี้ ตัวอย่างข้างล่าง
@@ -84,26 +80,26 @@ _G.FarmMastery_Settings = {
 }
 _G.SwordSettings = { -- ดาบที่จะทำ
     ['Saber'] = true,
-    ["Pole"] = false,
-    ['MidnightBlade'] = false,
-    ['Shisui'] = false,
-    ['Saddi'] = false,
-    ['Wando'] = false,
+    ["Pole"] = true,
+    ['MidnightBlade'] = true,
+    ['Shisui'] = true,
+    ['Saddi'] = true,
+    ['Wando'] = true,
     ['Yama'] = true,
-    ['Rengoku'] = false,
-    ['Canvander'] = false,
-    ['BuddySword'] = false,
-    ['TwinHooks'] = false,
+    ['Rengoku'] = true,
+    ['Canvander'] = true,
+    ['BuddySword'] = true,
+    ['TwinHooks'] = true,
     ['HallowScryte'] = true,
-    ['TrueTripleKatana'] = false,
+    ['TrueTripleKatana'] = true,
     ['CursedDualKatana'] = true
 }
 _G.SharkAnchor_Settings = {
     ["Enabled_Farm"] = true,
 }
 _G.GunSettings = { -- ปืนที่จะทำ
-    ['Kabucha'] = false,
-    ['SerpentBow'] = false,
+    ['Kabucha'] = true,
+    ['SerpentBow'] = true,
     ['SoulGuitar'] = true
 }
 getgenv().Key = "MARU-819HP-ZZPE-Q1GST-QXWF-CHK72"
